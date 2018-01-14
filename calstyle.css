@@ -1,11 +1,18 @@
 .btn {
 	border-color: black;
 	padding: 16px 32px;
-	font-size: 16px;
+	font-size: 24px;
 	display: inline-block;
 	cursor: pointer;
-	width: 6em;
+	width: 100px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
 }
 .btn-success {
-	width: 12em;
+	width: 210px;
+}
+.btn-primary {
+	background-color: white;
+	color: black;
 }
