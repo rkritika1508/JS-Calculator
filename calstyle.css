@@ -13,6 +13,9 @@
 .btn-info {
 	font-size: 28px;
 }
+.btn-danger {
+	background-color: #ff1919;
+}
 .btn-success {
 	width: 210px;
 }
@@ -20,7 +23,14 @@
 	background-color: white;
 	color: black;
 }
+.btn:hover{transform: scale(1.1);}
 .btn-primary:hover {
 	background-color: #C0C0C0;
-	color: white:;
+	color: white;
+}
+.btn-info:hover {
+	background-color: #00cc9d;
+}
+.btn-danger:hover {
+	background-color: #ff0000;
 }
