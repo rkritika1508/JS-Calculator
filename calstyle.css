@@ -1,9 +1,29 @@
+.layout {
+	border:1px solid black;
+	margin:auto;
+	height: 700px;
+	width: 550px;
+	padding-top: 16px; 
+	background-color: #2f4f4f;
+}
+textarea {
+	height: 150px;
+	width: 520px;
+	background-color: #d3d3d3;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	font-size: 24px;
+	resize: none;
+	border-radius: 8px;
+}
 .buttons {
 	border:1px solid black;
 	margin: auto;
 	height: 485px;
 	padding-top: 16px;
 	width:520px;
+	background-color: #2f4f4f;
 }
 .btn {
 	border-color: black;
