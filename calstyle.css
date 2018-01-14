@@ -1,7 +1,9 @@
 .buttons {
 	border:1px solid black;
-	height: 487px;
+	margin: auto;
+	height: 485px;
 	padding-top: 16px;
+	width:520px;
 }
 .btn {
 	border-color: black;
@@ -15,6 +17,7 @@
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
+	margin-left: 10px;
 }
 .btn-info {
 	font-size: 28px;
@@ -23,7 +26,7 @@
 	background-color: #ff1919;
 }
 .btn-success {
-	width: 210px;
+	width: 225px;
 }
 .btn-primary {
 	background-color: white;
