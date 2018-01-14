@@ -5,9 +5,13 @@
 	display: inline-block;
 	cursor: pointer;
 	width: 100px;
+	height: 70px;
 	margin-bottom: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
+}
+.btn-info {
+	font-size: 28px;
 }
 .btn-success {
 	width: 210px;
@@ -15,4 +19,8 @@
 .btn-primary {
 	background-color: white;
 	color: black;
+}
+.btn-primary:hover {
+	background-color: #C0C0C0;
+	color: white:;
 }
