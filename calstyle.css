@@ -1,0 +1,11 @@
+.btn {
+	border-color: black;
+	padding: 16px 32px;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+	width: 6em;
+}
+.btn-success {
+	width: 12em;
+}
