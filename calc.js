@@ -2,7 +2,9 @@
 var number = document.querySelectorAll(".num");
 var operator = document.querySelectorAll(".operator");
 var content = document.querySelector("textarea");
-var num1;
+var ac = document.querySelector("#allclear");
+var clear = document.querySelector("#clear");
+var num1, ops;
 // for (var i = 0; i < number.length; i++) {
 //  console.log(number[i].value);
 // }
@@ -14,13 +16,17 @@ for(var i=0;i<number.length;i++){
   		num1 = Number(content.textContent);
 	})
 }
-content.textContent = "";
-console.log(num1);
 
 for(var j=0;j<operator.length;j++){
 	operator[j].addEventListener("click", function(){
-		content.textContent = this.value;
+		ops = this.value;
+		content.textContent+=ops;
 	})
 }
-content.textContent = "";
+ac.addEventListener("click", function(){
+	content.textContent = "";
+})
 
+clear.addEventListener("click", function(){
+	content.textContent = content.textContent.slice(0,-1);
+})
