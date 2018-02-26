@@ -5,11 +5,12 @@ var content = document.querySelector("textarea");
 var ac = document.querySelector("#allclear");
 var clear = document.querySelector("#clear");
 var oppsign = document.querySelector("#oppsign");
-var num1, ops, opsIndex,result;
+var num1, ops, opsIndex,result=0;
 var plus = document.getElementById("+");
 var minus = document.getElementById("-");
 var multiply = document.getElementById("*");
 var divide = document.getElementById("/");
+var equal = document.querySelector("#equal");
 
 for(var i=0;i<number.length;i++){
   	number[i].addEventListener("click", function(){
@@ -39,22 +40,26 @@ clear.addEventListener("click", function(){
 	content.textContent = content.textContent.slice(0,-1);
 })
 
-function add(){
-	plus.addEventListener("click", function(){
-	result = num1+num2;
+equal.addEventListener("click", function(){
+	if (ops = "+") {
+		plus.addEventListener("click", function(){
+			result = num1+num2;
+		})
+	}
+	else if (ops = "-") {
+		minus.addEventListener("click", function(){
+			result= num1-num2;
+		})
+	}
+	else if (ops = "*") {
+		multiply.addEventListener("click", function(){
+			result= num1*num2;
+		})
+	}
+	else if (ops = "-") {
+		divide.addEventListener("click", function(){
+			result= num1/num2;
+		})
+	}
+	content.textContent = result;
 })
-}
-
-
-
-// minus.addEventListener("click", function(){
-// 	result = num1-num2;
-// })
-
-// multiply.addEventListener("click", function(){
-// 	result = num1*num2;
-// })
-
-// divide.addEventListener("click", function(){
-// 	result = num1/num2 ;
-// })
