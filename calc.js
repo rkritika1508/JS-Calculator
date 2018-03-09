@@ -4,7 +4,6 @@ var operator = document.querySelectorAll(".operator");
 var content = document.querySelector("textarea");
 var ac = document.querySelector("#allclear");
 var clear = document.querySelector("#clear");
-var oppsign = document.querySelector("#oppsign");
 var totalString="", result;
 var plus = document.getElementById("+");
 var minus = document.getElementById("-");
@@ -36,6 +35,6 @@ clear.addEventListener("click", function(){
 
 equal.addEventListener("click", function(){
 	result = eval(totalString);
-	content.textContent = result;
+	content.textContent = content.textContent + "\n" + result;
 	totalString = "";
 })

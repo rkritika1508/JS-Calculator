@@ -13,7 +13,7 @@ textarea {
 	padding: 12px 20px;
 	box-sizing: border-box;
 	border: 1px solid black;
-	font-size: 24px;
+	font-size: 36px;
 	resize: none;
 	border-radius: 8px;
 }
@@ -46,6 +46,9 @@ textarea {
 	background-color: #ff1919;
 }
 .btn-success {
+	width: 225px;
+}
+#allclear {
 	width: 225px;
 }
 .btn-primary {
