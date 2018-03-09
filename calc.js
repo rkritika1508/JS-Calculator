@@ -5,35 +5,29 @@ var content = document.querySelector("textarea");
 var ac = document.querySelector("#allclear");
 var clear = document.querySelector("#clear");
 var oppsign = document.querySelector("#oppsign");
-var num1, ops, opsIndex,result=0;
+var totalString="", result;
 var plus = document.getElementById("+");
 var minus = document.getElementById("-");
 var multiply = document.getElementById("*");
 var divide = document.getElementById("/");
 var equal = document.querySelector("#equal");
 
-for(var i=0;i<number.length;i++){
-  	number[i].addEventListener("click", function(){
-  		var numr = this.value;
-  		content.textContent = content.textContent + numr;
-  		num1 = Number(content.textContent.substr(0,opsIndex));
-  		num2 = Number(content.textContent.substr(opsIndex+1));
-	})
+for(var i=0; i<number.length; i++){
+	number[i].addEventListener("click", function(){
+		totalString += this.value;
+		content.textContent = totalString; 
+	});
 }
-
-for(var j=0;j<operator.length;j++){
+for(var j=0; j<operator.length; j++){
 	operator[j].addEventListener("click", function(){
-		ops = this.value;
-		content.textContent+=ops;
-		opsIndex = content.textContent.indexOf(ops);
+		totalString+=this.value;
+		content.textContent = totalString;
 	})
 }
 
 ac.addEventListener("click", function(){
 	content.textContent = "";
-	num1 = 0;
-	num2 = 0;
-	result = 0;
+	totalString = "";
 })
 
 clear.addEventListener("click", function(){
@@ -41,25 +35,7 @@ clear.addEventListener("click", function(){
 })
 
 equal.addEventListener("click", function(){
-	if (ops = "+") {
-		plus.addEventListener("click", function(){
-			result = num1+num2;
-		})
-	}
-	else if (ops = "-") {
-		minus.addEventListener("click", function(){
-			result= num1-num2;
-		})
-	}
-	else if (ops = "*") {
-		multiply.addEventListener("click", function(){
-			result= num1*num2;
-		})
-	}
-	else if (ops = "-") {
-		divide.addEventListener("click", function(){
-			result= num1/num2;
-		})
-	}
+	result = eval(totalString);
 	content.textContent = result;
+	totalString = "";
 })
