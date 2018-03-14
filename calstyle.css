@@ -1,13 +1,22 @@
+* {
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+}
+body {
+  background-color:white;
+}
 .layout {
-	border:1px solid black;
+    border:1px solid black;
 	margin:auto;
 	height: 700px;
 	width: 550px;
 	padding-top: 16px; 
 	background-color: #2f4f4f;
+	border-radius: 8px;
 }
-textarea {
-	height: 150px;
+#display {
+   height: 150px;
 	width: 520px;
 	background-color: #d3d3d3;
 	padding: 12px 20px;
@@ -17,14 +26,7 @@ textarea {
 	resize: none;
 	border-radius: 8px;
 }
-.buttons {
-	border:1px solid black;
-	margin: auto;
-	height: 485px;
-	padding-top: 16px;
-	width:520px;
-	background-color: #2f4f4f;
-}
+
 .btn {
 	border-color: black;
 	border-width: 1px;
@@ -38,35 +40,45 @@ textarea {
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-left: 10px;
+	border-radius: 8px;
 }
-.btn-info {
-	font-size: 28px;
+
+
+
+.btn-danger{
+  color: white;
+  background-color: #ff1919;
 }
-.btn-danger {
-	background-color: #ff1919;
+
 }
-.btn-success {
-	width: 225px;
+.btn-danger:hover {
+	background-color: #ff0000;
 }
-#allclear {
-	width: 225px;
-}
+
+
 .btn-primary {
-	background-color: white;
-	color: black;
+  color: black;
+  background-color: white;
+
 }
-.btn:hover{
-	transform: scale(1.1);
-	border-color: black;
-	border-width: 1.5px;
-}
+
 .btn-primary:hover {
 	background-color: #C0C0C0;
 	color: white;
 }
+
+.btn-info {
+  background-color: #57C2DE;
+	color: white;
+  
+}
+
 .btn-info:hover {
 	background-color: #00cc9d;
 }
-.btn-danger:hover {
-	background-color: #ff0000;
+
+
+.btn-operations {
+  background-color: #5BB85D;
+	color: white;
 }
